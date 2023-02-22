@@ -1,0 +1,332 @@
+{deck}
+version:1
+card:16
+size:[512,342]
+name:"Fatherhood.deck"
+
+{card:home}
+{widgets}
+field1:{"type":"field","size":[100,34],"pos":[206,84],"value":"you picked up baby toys "}
+button1:{"type":"button","size":[109,20],"pos":[109,157],"text":"look in closet"}
+button2:{"type":"button","size":[139,20],"pos":[270,159],"script":"home.0","text":"Leave nersery"}
+
+{script:home.0}
+on click do
+  go["card3"]
+end
+{end}
+
+{card:card1}
+{widgets}
+start:{"type":"field","size":[90,88],"pos":[209,110],"value":"Welcome new dad.\n\nYour Baby is a sleep and your goal need to keep your baby alive. Good Luck"}
+
+{card:card2}
+{widgets}
+Dont wake the baby:{"type":"field","size":[100,124],"pos":[193,34],"value":"You need to set up a couple things before the baby is awake please find the following items.\n\nBaby gate, Plug protexters, Baby Locks, Baby toys, A clean Baby bottle, formula, baby whipes\n\n"}
+starting from the bedroom:{"type":"field","size":[100,63],"pos":[193,166],"border":0,"value":"you are in the bedroom where your baby has just gone down for a nap\nyou have 3 options"}
+button1:{"type":"button","size":[60,20],"pos":[94,238],"script":"home.0","text":"Hallway"}
+BAthroom :{"type":"button","size":[123,23],"pos":[174,237],"text":"bedroom Bathroom"}
+Closet:{"type":"button","size":[60,20],"pos":[311,239],"text":"Closet"}
+
+{card:card7}
+{widgets}
+Closet :{"type":"field","size":[100,69],"pos":[207,54],"value":"You look in the closet and find Dipers do you want to pick up the dipers"}
+YEs:{"type":"button","size":[60,20],"pos":[143,154],"script":"card7.0","text":"Yes"}
+button1:{"type":"button","size":[60,20],"pos":[314,151],"text":"NO"}
+
+{script:card7.0}
+on click do
+  go["card8"]
+end
+{end}
+
+{card:card9}
+
+{card:card8}
+{widgets}
+field1:{"type":"field","size":[100,50],"pos":[205,57],"value":"you have picked up the dipers and now you have one option."}
+button1:{"type":"button","size":[60,20],"pos":[227,133],"script":"card8.0","text":"Bedroom"}
+
+{script:card8.0}
+on click do
+  go["card2"]
+end
+{end}
+
+{card:card4}
+{widgets}
+Bathroom:{"type":"field","size":[100,78],"pos":[208,57],"value":"Yout in the bedroom bathroom and see that the toilet lid is up. do you want to shut the toilet lid."}
+YEs:{"type":"button","size":[60,20],"pos":[124,156],"text":"Yes"}
+No:{"type":"button","size":[60,20],"pos":[310,155],"text":"No"}
+
+{card:card6}
+{widgets}
+field1:{"type":"field","size":[100,41],"pos":[196,75],"value":"You have left the toilet open you have one option"}
+button1:{"type":"button","size":[60,20],"pos":[217,149],"script":"card8.0","text":"Bedroom"}
+
+{card:card5}
+{widgets}
+You shut :{"type":"field","size":[100,33],"pos":[208,106],"value":"you shut the toilet lid now u have 1 option"}
+Bedroom:{"type":"button","size":[60,20],"pos":[224,153],"script":"card8.0","text":"Bedroom"}
+
+{card:card3}
+{widgets}
+Hallway:{"type":"field","size":[100,51],"pos":[201,48],"value":"You are in the Hallway you have 5 options"}
+Hallway Bathroom:{"type":"button","size":[127,23],"pos":[63,124],"text":"Hallway bathroom"}
+button1:{"type":"button","size":[60,20],"pos":[207,124],"script":"card3.0","text":"Nersery"}
+Office:{"type":"button","size":[60,20],"pos":[280,125],"text":"Office"}
+button2:{"type":"button","size":[81,20],"pos":[354,125],"text":"Entery way"}
+button3:{"type":"button","size":[60,20],"pos":[226,161],"script":"card8.0","text":"Bedroom"}
+
+{script:card3.0}
+on click do
+  go["card10"]
+end
+{end}
+
+{card:card19}
+{widgets}
+entery way:{"type":"field","size":[100,78],"pos":[206,57],"value":"You exit threw the entery way on your right is the dinning room. on your left is the door to outside. in frount of you is a closet."}
+button1:{"type":"button","size":[119,20],"pos":[88,154],"script":"card19.0","text":"Dining room"}
+button2:{"type":"button","size":[92,20],"pos":[220,155],"script":"card19.1","text":"outside door"}
+button3:{"type":"button","size":[92,20],"pos":[325,155],"text":"Look in closet"}
+Hallway:{"type":"button","size":[60,20],"pos":[229,194],"script":"home.0","text":"Hallway"}
+
+{script:card19.0}
+on click do
+  go["card20"]
+end
+{end}
+
+{script:card19.1}
+on click do
+  go["card22"]
+end
+{end}
+
+{card:card22}
+{widgets}
+field1:{"type":"field","size":[100,75],"pos":[202,115],"value":"your baby died becouse you left him alone"}
+
+{card:card20}
+{widgets}
+You:{"type":"field","size":[146,85],"pos":[187,62],"value":"You look around and see a table and a counter that devides the kitchen from the dinning room infrount of you. to the left is the living room. you look on the table where a left out cup and papers sit you look on the counter and see formula."}
+.:{"type":"button","size":[113,20],"pos":[79,172],"script":"card20.0","text":"pick up formula"}
+button1:{"type":"button","size":[134,20],"pos":[208,171],"text":"enter living room"}
+button2:{"type":"button","size":[91,20],"pos":[362,172],"text":"Enter kitchen"}
+
+{script:card20.0}
+on click do
+  go["card21"]
+end
+{end}
+
+{card:card23}
+{widgets}
+field1:{"type":"field","size":[100,49],"pos":[172,57],"value":"You  enter the living room to see that there is a loose cord pluged in to the wall. "}
+button1:{"type":"button","size":[158,20],"pos":[49,142],"text":"pull out the cord"}
+button2:{"type":"button","size":[129,20],"pos":[282,144],"script":"card19.0","text":"Leave living room"}
+
+{card:card24}
+{widgets}
+field1:{"type":"field","size":[100,45],"pos":[206,60],"value":"the cord has been pulled out and put away"}
+button1:{"type":"button","size":[129,20],"pos":[80,141],"text":"Leave living room"}
+
+{card:card25}
+{widgets}
+field1:{"type":"field","size":[100,29],"pos":[207,82],"value":"You have enetered the dinning room.\n"}
+button1:{"type":"button","size":[100,20],"pos":[74,129],"text":"Living room"}
+button2:{"type":"button","size":[114,20],"pos":[361,130],"text":"Enteryway"}
+button3:{"type":"button","size":[155,20],"pos":[187,129],"text":"Kitchen"}
+
+{card:card27}
+{widgets}
+field1:{"type":"field","size":[100,77],"pos":[208,84],"value":"your in the Kitchen and see on by the sink a dirty bottle. the soap container is empty you need new soap to wash the bottle."}
+button1:{"type":"button","size":[142,20],"pos":[75,180],"script":"card27.0","text":"Pick up dirty bottle"}
+button2:{"type":"button","size":[135,20],"pos":[282,173],"script":"card27.1","text":"Dinning room."}
+button3:{"type":"button","size":[105,20],"pos":[200,221],"text":"Laundery room"}
+
+{script:card27.0}
+on click do
+  go["card28"]
+end
+{end}
+
+{script:card27.1}
+on click do
+  go["card25"]
+end
+{end}
+
+{card:card29}
+{widgets}
+button1:{"type":"button","size":[60,20],"pos":[127,132],"script":"card29.0","text":"Pick it up"}
+field1:{"type":"field","size":[100,53],"pos":[189,61],"value":"you  have found the extra dish soap in the laungery room do you want to pick it up"}
+button2:{"type":"button","size":[60,20],"pos":[292,131],"script":"card29.1","text":"Grage"}
+button3:{"type":"button","size":[60,20],"pos":[214,134],"script":"card29.2","text":"Kitchen"}
+
+{script:card29.0}
+on click do
+  go["card30"]
+end
+{end}
+
+{script:card29.1}
+on click do
+  go["card34"]
+end
+{end}
+
+{script:card29.2}
+on click do
+  go["card27"]
+end
+{end}
+
+{card:card34}
+{widgets}
+field1:{"type":"field","size":[100,51],"pos":[215,85],"value":"you enter the grage to see a car and the baby gate"}
+button1:{"type":"button","size":[129,20],"pos":[209,163],"text":"pick up baby gate"}
+
+{card:card30}
+{widgets}
+field1:{"type":"field","size":[100,45],"pos":[197,89],"value":"you picked up the dish soap"}
+button1:{"type":"button","size":[60,20],"pos":[111,158],"script":"card30.0","text":"Kitchen"}
+button2:{"type":"button","size":[60,20],"pos":[287,155],"text":"Grage"}
+
+{script:card30.0}
+on click do
+  go["card31"]
+end
+{end}
+
+{card:card31}
+{widgets}
+field1:{"type":"field","size":[100,103],"pos":[206,49],"value":"your in the kitchen and you head to then sink to wash the bottle. you turn the water on. you need to wash the bottle"}
+button1:{"type":"button","size":[60,20],"pos":[217,176],"script":"card31.0","text":"Use soap"}
+
+{script:card31.0}
+on click do
+  go["card32"]
+end
+{end}
+
+{card:card32}
+{widgets}
+field1:{"type":"field","size":[100,20],"pos":[202,125],"value":"you washed the bottle"}
+button1:{"type":"button","size":[105,20],"pos":[193,161],"script":"card32.0","text":"use formula"}
+
+{script:card32.0}
+on click do
+  go["card33"]
+end
+{end}
+
+{card:card33}
+{widgets}
+field1:{"type":"field","size":[100,20],"pos":[217,87],"value":"you made the bottle"}
+button1:{"type":"button","size":[131,20],"pos":[84,162],"text":"laungery room"}
+button2:{"type":"button","size":[103,20],"pos":[309,159],"text":"dinning room"}
+
+{card:card28}
+{widgets}
+field1:{"type":"field","size":[100,31],"pos":[200,67],"value":"you picked up the dirty bottle."}
+button1:{"type":"button","size":[150,20],"pos":[52,146],"text":"use formula and water"}
+button2:{"type":"button","size":[138,20],"pos":[224,144],"text":"dinning room "}
+button3:{"type":"button","size":[115,20],"pos":[379,145],"text":"Landrey room"}
+
+{card:card26}
+{widgets}
+field1:{"type":"field","size":[100,35],"pos":[191,72],"value":"your in the livng room and see open outlets"}
+button1:{"type":"button","size":[125,20],"pos":[92,126],"script":"card27.1","text":"leave living room"}
+
+{card:card21}
+{widgets}
+button1:{"type":"button","size":[60,20],"pos":[116,144],"text":"Kitchen"}
+field1:{"type":"field","size":[100,46],"pos":[214,66],"value":"you picked up the formula"}
+button2:{"type":"button","size":[89,20],"pos":[205,142],"text":"Living room"}
+button3:{"type":"button","size":[96,20],"pos":[314,146],"text":"entery way"}
+
+{card:card18}
+{widgets}
+field1:{"type":"field","size":[100,53],"pos":[203,59],"value":"You walk into the office and see a cat laying in the window seal."}
+button1:{"type":"button","size":[113,20],"pos":[194,139],"script":"home.0","text":"Leave office"}
+
+{card:card16}
+{widgets}
+Bathroom:{"type":"field","size":[100,58],"pos":[206,81],"value":"U see the door to the bathroom is open you walk threw into the bathroom look around and see baby tylanol "}
+Pick up:{"type":"button","size":[60,20],"pos":[158,156],"text":"Pick up"}
+Leave:{"type":"button","size":[60,20],"pos":[270,158],"script":"home.0","text":"Leave"}
+
+{card:card17}
+{widgets}
+Pick it up:{"type":"field","size":[100,40],"pos":[206,63],"value":"You picked up the baby tylanol.\nyou have one option\n"}
+:{"type":"button","size":[143,20],"pos":[182,137],"script":"home.0","text":"Leave the Restroom"}
+
+{card:card10}
+{widgets}
+field1:{"type":"field","size":[100,63],"pos":[206,87],"value":"You are in the Nearsery and you look around and see baby toys and small legos there is also a closet."}
+button1:{"type":"button","size":[118,20],"pos":[196,160],"script":"card10.0","text":"Pick up baby toys"}
+button2:{"type":"button","size":[108,20],"pos":[55,160],"script":"card10.1","text":"put away legos"}
+button3:{"type":"button","size":[92,20],"pos":[343,158],"script":"card10.2","text":"Look in closet"}
+button4:{"type":"button","size":[135,20],"pos":[215,211],"script":"home.0","text":"Leave nersery"}
+
+{script:card10.0}
+on click do
+  go["home"]
+end
+{end}
+
+{script:card10.1}
+on click do
+  go["card11"]
+end
+{end}
+
+{script:card10.2}
+on click do
+  go["card13"]
+end
+{end}
+
+{card:card13}
+{widgets}
+field1:{"type":"field","size":[100,38],"pos":[203,109],"value":"you look in closet and see some pacifiers "}
+button1:{"type":"button","size":[60,20],"pos":[224,159],"script":"card13.0","text":"Pick up"}
+
+{script:card13.0}
+on click do
+  go["card14"]
+end
+{end}
+
+{card:card14}
+{widgets}
+field1:{"type":"field","size":[100,50],"pos":[213,118],"value":"Nerscery \n2 options "}
+button1:{"type":"button","size":[144,20],"pos":[65,188],"script":"home.0","text":"leave the nersery"}
+button2:{"type":"button","size":[96,20],"pos":[311,180],"script":"card14.0","text":"Look in closet"}
+
+{script:card14.0}
+on click do
+  go["card15"]
+end
+{end}
+
+{card:card15}
+{widgets}
+field1:{"type":"field","size":[100,20],"pos":[219,93],"value":"Nothing inside here"}
+button1:{"type":"button","size":[132,20],"pos":[192,147],"script":"card13.0","text":"leave closert"}
+
+{card:card12}
+{widgets}
+field1:{"type":"field","size":[100,56],"pos":[206,58],"value":"you picked up the baby toys"}
+button1:{"type":"button","size":[108,20],"pos":[73,140],"text":"Put away legos"}
+button2:{"type":"button","size":[97,20],"pos":[352,140],"script":"home.0","text":"leave nersery"}
+button3:{"type":"button","size":[95,20],"pos":[209,140],"script":"card10.2","text":"look in closet"}
+
+{card:card11}
+{widgets}
+field1:{"type":"field","size":[100,52],"pos":[213,75],"value":"You put away the legos"}
+;Pick up baby toys:{"type":"button","size":[107,20],"pos":[75,149],"script":"card10.0","text":"Pick up baby toys"}
+button1:{"type":"button","size":[103,20],"pos":[314,146],"text":"Look in closet"}
+
